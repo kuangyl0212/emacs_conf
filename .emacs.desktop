@@ -1,0 +1,43 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Mon Jan 22 10:28:27 2018
+;; Desktop file format version 208
+;; Emacs version 25.3.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (23141 19531 133328 0) (desktop . "208") "ruling@ACA2016A.ipt.aol.com" nil nil ((((font-backend mac-ct) (fontsize . 0) (font . "-*-Menlo-normal-normal-normal-*-16-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "Black") (background-color . "White") (line-spacing) (left-fringe . 8) (right-fringe . 8) (menu-bar-lines . 1) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 0) (alpha) (fullscreen) (display-type . color) (background-mode . light) (cursor-color . "black") (environment) (frameset--id . "399A-6207-C925-EDFC") (frameset--mini t . t) (modeline . t) (minibuffer . t) (unsplittable) (right-divider-width . 0) (bottom-divider-width . 0) (icon-name) (visibility . t) (display . "ACA2016A.ipt.aol.com") (explicit-name) (tool-bar-position . top) (height . 36) (width . 80) (left . 270) (top . 22)) ((min-height . 8) (min-width . 10) (min-height-ignore . 4) (min-width-ignore . 9) (min-height-safe . 2) (min-width-safe . 2) (min-pixel-height . 152) (min-pixel-width . 100) (min-pixel-height-ignore . 76) (min-pixel-width-ignore . 90) (min-pixel-height-safe . 38) (min-pixel-width-safe . 20)) vc (pixel-width . 831) (pixel-height . 665) (total-width . 83) (total-height . 35) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 831) (pixel-height . 342) (total-width . 83) (total-height . 18) (normal-height . 0.5142857142857142) (normal-width . 1.0) (buffer "init.el" (selected) (hscroll . 0) (fringes 8 8 nil) (margins 3) (scroll-bars nil 2 t nil 0 nil) (vscroll . 0) (dedicated) (point . 3936) (start . 3936))) (leaf (last . t) (pixel-width . 831) (pixel-height . 323) (total-width . 83) (total-height . 17) (normal-height . 0.4857142857142857) (normal-width . 1.0) (buffer "hdoj" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins 3) (scroll-bars nil 2 t nil 0 nil) (vscroll . 0) (dedicated) (point . 867) (start . 1)))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("add-to-list"))
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/.emacs.d/init.el" "~/workspace/prictice/hdoj/" "~/.emacs.d/init.el" "~/workspace/prictice/hdoj/1002.cc" "~/org/study.org" "~/org/notes/cpp.org" "~/org/notes/cpp.html" "~/workspace/cppprimer/2.16.cc" "~/workspace/cppprimer/2.14.cc" "~/org/study.html" "~/.emacs.d/elpa/window-numbering-20160809.1110/window-numbering-autoloads.el" "~/.emacs.d/elpa/org-pomodoro-20171108.1314/org-pomodoro-autoloads.el" "~/.emacs.d/elpa/alert-20180116.1751/alert-autoloads.el" "~/.emacs.d/elpa/gntp-20141024.1950/gntp-autoloads.el" "~/.emacs.d/elpa/log4e-20170401.604/log4e-autoloads.el" "~/.emacs.d/elpa/js3-mode-20160515.850/js3-mode-autoloads.el" "~/.emacs.d/elpa/monokai-theme-20180104.429/monokai-theme-autoloads.el" "~/.emacs.d/elpa/exec-path-from-shell-20170508.4/exec-path-from-shell-autoloads.el" "~/.emacs.d/elpa/nodejs-repl-20170722.443/nodejs-repl-autoloads.el" "~/.emacs.d/elpa/js2-mode-20171224.1833/js2-mode-autoloads.el" "~/.emacs.d/elpa/smartparens-20180118.735/smartparens-autoloads.el" "~/.emacs.d/elpa/dash-20180118.743/dash-autoloads.el"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  nil
+  "hdoj"
+  'dired-mode
+  '(linum-mode company-mode)
+  867
+  '(nil nil)
+  t
+  '("/Users/ruling/workspace/prictice/hdoj/")
+  nil
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/ruling/.emacs.d/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(linum-mode company-mode)
+  3936
+  '(3899 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (3899 3936 87 401 351 404 334 350 3897 3897))))
+

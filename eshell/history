@@ -1,0 +1,22 @@
+g++ 2.14.cc 
+./a.out 
+g++ 2.16.cc 
+./a.out 
+g++ 2.16.cc 
+./a.out 
+cd ~/workspace/prictice/hdoj/
+ls
+g++ 1002.cc 
+g++ 1002.cc 
+g++ 1002.cc 
+./a.out 
+g++ 1002.cc 
+g++ 1002.cc 
+./a.out 
+gdb ./a.out 
+gdb ./a.out 
+g++ -o 1002 1002.cc 
+gdb 1002
+g++ -o 1002 1002.cc -g
+gdb 1002
+gdb 1002
