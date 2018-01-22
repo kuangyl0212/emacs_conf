@@ -1,5 +1,6 @@
 
 
+
 (when (>= emacs-major-version 24)
      (require 'package)
      (package-initialize)
@@ -57,6 +58,9 @@
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
 
+;; 加载目录
+(add-to-list 'load-path "~/.emacs.d/lisp/")
+
 ;; 关闭工具栏，tool-bar-mode 即为一个 Minor Mode
 (tool-bar-mode -1)
 
@@ -101,7 +105,8 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (window-numbering org-pomodoro js3-mode company hungry-delete swiper counsel smartparens js2-mode nodejs-repl exec-path-from-shell monokai-theme))))
+    (helm-gtags helm window-numbering org-pomodoro js3-mode company hungry-delete swiper counsel smartparens js2-mode nodejs-repl exec-path-from-shell monokai-theme)))
+ '(session-use-package t nil (session)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -162,9 +167,20 @@
 (electric-pair-mode t)
 
 ;; 保存会话
-(desktop-save-mode 1)
+(desktop-save-mode)
 
-(load-file "~/.emacs.d/session.el") 
 (require 'session)
 (add-hook 'after-init-hook
-          'session-initialize)
+        'session-initialize)
+
+;; helm
+(require 'helm-config)
+
+;; 括号高亮
+(require 'highlight-parentheses)  
+(define-globalized-minor-mode global-highlight-parentheses-mode  
+  highlight-parentheses-mode  
+  (lambda ()  
+    (highlight-parentheses-mode t)))  
+(global-highlight-parentheses-mode t)
+
