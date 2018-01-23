@@ -1,17 +1,71 @@
-;;; Automatically generated on Mon Jan 22 14:13:47 2018
+;;; Automatically generated on Mon Jan 22 22:18:10 2018
 ;;; Invoked by ruling@ACA2016A.ipt.aol.com using 25.3.1
-(setq-default kill-ring '("End of file during parsing: /Users/ruling/.emacs.d/init.el" "(require 'highlight-parentheses)  
-(define-globalized-minor-mode global-highlight-parentheses-mode  
-  highlight-parentheses-mode  
-  (lambda ()  
-    (highlight-parentheses-mode t)))  
-(global-highlight-parentheses-mode t)" "(require 'helm-config)"))
-(setq-default session-file-alist '(("~/.emacs.d/init.el" 4071 4111 1 nil nil 4110 (overwrite-mode)) ("~/.emacs.d/elpa/highlight-parentheses-20170809.1151/highlight-parentheses-autoloads.el" 1480 nil 1 nil nil 1480 (overwrite-mode)) ("~/.emacs.d/elpa/helm-20180119.1053/helm-autoloads.el" 30684 nil 1 nil nil 30684 (overwrite-mode)) ("~/.emacs.d/elpa/popup-20160709.729/popup-autoloads.el" 246 nil 1 nil nil 246 (overwrite-mode)) ("~/.emacs.d/elpa/helm-core-20180121.1022/helm-core-autoloads.el" 6066 nil 1 nil nil 6066 (overwrite-mode)) ("~/.emacs.d/elpa/async-20180119.533/async-autoloads.el" 4644 nil 1 nil nil 4644 (overwrite-mode))))
-(setq-default file-name-history '("~/.emacs.d/init.el" "~/workspace/.DS_Store" "/Users/ruling/workspace" "~/.emacs.d/elpa/helm-20180119.1053/helm-autoloads.el" "~/.emacs.d/elpa/popup-20160709.729/popup-autoloads.el" "~/.emacs.d/elpa/helm-core-20180121.1022/helm-core-autoloads.el" "~/.emacs.d/elpa/async-20180119.533/async-autoloads.el" "~/workspace/prictice/hdoj/" "~/workspace/prictice/hdoj/1002.cc" "~/org/study.org" "~/org/notes/cpp.org" "~/org/notes/cpp.html" "~/workspace/cppprimer/2.16.cc" "~/workspace/cppprimer/2.14.cc" "~/org/study.html" "~/.emacs.d/elpa/window-numbering-20160809.1110/window-numbering-autoloads.el" "~/.emacs.d/elpa/org-pomodoro-20171108.1314/org-pomodoro-autoloads.el" "~/.emacs.d/elpa/alert-20180116.1751/alert-autoloads.el" "~/.emacs.d/elpa/gntp-20141024.1950/gntp-autoloads.el" "~/.emacs.d/elpa/log4e-20170401.604/log4e-autoloads.el" "~/.emacs.d/elpa/js3-mode-20160515.850/js3-mode-autoloads.el" "~/.emacs.d/elpa/monokai-theme-20180104.429/monokai-theme-autoloads.el" "~/.emacs.d/elpa/exec-path-from-shell-20170508.4/exec-path-from-shell-autoloads.el" "~/.emacs.d/elpa/nodejs-repl-20170722.443/nodejs-repl-autoloads.el" "~/.emacs.d/elpa/js2-mode-20171224.1833/js2-mode-autoloads.el" "~/.emacs.d/elpa/smartparens-20180118.735/smartparens-autoloads.el" "~/.emacs.d/elpa/dash-20180118.743/dash-autoloads.el"))
+(setq-default kill-ring '("set-key (kbd \"<f4>\") 'sr-speedba" "sr-speedbar-open" "(global-set-key (kbd \"<f2>\") 'open-init-file)
+" " (defun tabbar-buffer-groups ()
+   (list
+    (cond
+     ((or (get-buffer-process (current-buffer))
+          ;; Check if the major mode derives from `comint-mode' or `compilation-mode'.
+          (tabbar-buffer-mode-derived-p
+           major-mode '(comint-mode compilation-mode)))
+      \"Process\"
+      )
+     ((and (string-equal \"*\" (substring (buffer-name) 0 1)) (string-equal \"*nrepl*\" (buffer-name)))
+      \"Common\"
+      )
+     ((memq major-mode
+     		 '(python-mode))
+      \"python\"
+      )
+     (t
+      ;; Return `mode-name' if not blank, `major-mode' otherwise.
+      (if (and (stringp mode-name)
+               ;; Take care of preserving the match-data because this
+               ;; function is called when updating the header line.
+               (save-match-data (string-match \"[^ ]\" mode-name)))
+          mode-name
+        (symbol-name major-mode))
+      ))))" "(set-face-attribute
+ 'tabbar-default nil
+ :background \"gray20\"
+ :foreground \"gray20\"
+ :box '(:line-width 1 :color \"gray20\" :style nil))
+(set-face-attribute
+ 'tabbar-unselected nil
+ :background \"gray30\"
+ :foreground \"white\"
+ :box '(:line-width 5 :color \"gray30\" :style nil))
+(set-face-attribute
+ 'tabbar-selected nil
+ :background \"gray75\"
+ :foreground \"black\"
+ :box '(:line-width 5 :color \"gray75\" :style nil))
+(set-face-attribute
+ 'tabbar-highlight nil
+ :background \"white\"
+ :foreground \"black\"
+ :underline nil
+ :box '(:line-width 5 :color \"white\" :style nil))
+(set-face-attribute
+ 'tabbar-button nil
+ :box '(:line-width 1 :color \"gray20\" :style nil))
+(set-face-attribute
+ 'tabbar-separator nil
+ :background \"gray20\"
+ :height 0.6)" "(require 'tabbar)  
+(tabbar-mode 1) " "sr-speedbar" "
+" "//Active Buffers:" "semantic-mru-bookmark-ring"))
+(setq-default session-file-alist '(("~/.emacs.d/init.el" 7904 6667 1 nil nil 6667 (overwrite-mode)) ("~/.emacs.d/elpa/tabbar-20160524.1401/tabbar-autoloads.el" 5327 nil 1 nil nil 5327 (overwrite-mode)) ("~/.emacs.d/elpa/sr-speedbar-20161025.131/sr-speedbar-autoloads.el" 724 nil 1 nil nil 724 (overwrite-mode)) ("~/.emacs.d/elpa/ecb-20170728.1221/ecb-autoloads.el" 2673 nil 1 nil nil 2673 (overwrite-mode)) ("~/workspace/practice/hdoj/1005.cc" 297 151 1 nil nil 90 (overwrite-mode)) ("~/.emacs.d/elpa/window-number-20170731.1851/window-number-autoloads.el" 270 nil 1 nil nil 270 (overwrite-mode)) ("~/.emacs.d/elpa/evil-20180103.2356/evil-autoloads.el" 739 nil 1 nil nil 739 (overwrite-mode)) ("~/.emacs.d/elpa/undo-tree-20170706.246/undo-tree-autoloads.el" 1672 nil 1 nil nil 1672 (overwrite-mode)) ("~/.emacs.d/elpa/goto-chg-20180105.1033/goto-chg-autoloads.el" 1895 nil 1 nil nil 1895 (overwrite-mode)) ("~/.emacs.d/elpa/highlight-parentheses-20170809.1151/highlight-parentheses-autoloads.el" 1480 nil 1 nil nil 1480 (overwrite-mode)) ("~/.emacs.d/elpa/helm-20180119.1053/helm-autoloads.el" 30684 nil 1 nil nil 30684 (overwrite-mode)) ("~/.emacs.d/elpa/popup-20160709.729/popup-autoloads.el" 246 nil 1 nil nil 246 (overwrite-mode)) ("~/.emacs.d/elpa/helm-core-20180121.1022/helm-core-autoloads.el" 6066 nil 1 nil nil 6066 (overwrite-mode)) ("~/.emacs.d/elpa/async-20180119.533/async-autoloads.el" 4644 nil 1 nil nil 4644 (overwrite-mode))))
+(setq-default file-name-history '("~/workspace/practice/hdoj/2000.c" "~/workspace/practice/hdoj/2033.c" "~/workspace/practice/hdoj/1004.cc" "~/workspace/practice/hdoj/1005.cc" "~/.emacs.d/init.el" "~/workspace/practice/3-2.c" "~/workspace/practice/A1.c" "~/workspace/practice/3-7.c" "~/workspace/practice/3-6-1.cpp" "~/workspace/practice/3-1.c" "~/workspace/practice/2-4.c" "~/workspace/practice/2-2.c" "~/workspace/practice/1-6.c" "~/workspace/practice/1-2.c" "~/.emacs.d/ede-projects.el" "~/workspace/practice/hdoj/1002.cc" "~/.emacs.d/elpa/tabbar-20160524.1401/tabbar-autoloads.el" "~/.emacs.d/elpa/sr-speedbar-20161025.131/sr-speedbar-autoloads.el" "~/.emacs.d/elpa/ecb-20170728.1221/ecb-autoloads.el" "~/.emacs.d/elpa/window-number-20170731.1851/window-number-autoloads.el" "~/.emacs.d/elpa/evil-20180103.2356/evil-autoloads.el" "~/.emacs.d/elpa/undo-tree-20170706.246/undo-tree-autoloads.el" "~/.emacs.d/elpa/goto-chg-20180105.1033/goto-chg-autoloads.el" "~/workspace/.DS_Store" "/Users/ruling/workspace" "~/.emacs.d/elpa/helm-20180119.1053/helm-autoloads.el" "~/.emacs.d/elpa/popup-20160709.729/popup-autoloads.el" "~/.emacs.d/elpa/helm-core-20180121.1022/helm-core-autoloads.el" "~/.emacs.d/elpa/async-20180119.533/async-autoloads.el" "~/workspace/prictice/hdoj/" "~/workspace/prictice/hdoj/1002.cc" "~/org/study.org" "~/org/notes/cpp.org" "~/org/notes/cpp.html" "~/workspace/cppprimer/2.16.cc" "~/workspace/cppprimer/2.14.cc" "~/org/study.html" "~/.emacs.d/elpa/window-numbering-20160809.1110/window-numbering-autoloads.el" "~/.emacs.d/elpa/org-pomodoro-20171108.1314/org-pomodoro-autoloads.el" "~/.emacs.d/elpa/alert-20180116.1751/alert-autoloads.el" "~/.emacs.d/elpa/gntp-20141024.1950/gntp-autoloads.el" "~/.emacs.d/elpa/log4e-20170401.604/log4e-autoloads.el" "~/.emacs.d/elpa/js3-mode-20160515.850/js3-mode-autoloads.el" "~/.emacs.d/elpa/monokai-theme-20180104.429/monokai-theme-autoloads.el" "~/.emacs.d/elpa/exec-path-from-shell-20170508.4/exec-path-from-shell-autoloads.el" "~/.emacs.d/elpa/nodejs-repl-20170722.443/nodejs-repl-autoloads.el" "~/.emacs.d/elpa/js2-mode-20171224.1833/js2-mode-autoloads.el" "~/.emacs.d/elpa/smartparens-20180118.735/smartparens-autoloads.el" "~/.emacs.d/elpa/dash-20180118.743/dash-autoloads.el"))
 (setq-default search-ring '("add-to-list"))
-(setq-default command-history '((package-list-packages nil) (execute-extended-command nil "package-list-packages" "package-l") (find-file "~/.emacs.d/init.el" t)))
-(setq-default extended-command-history '("package-list-packages"))
+(setq-default buffer-name-history '("1005.cc" "*eshell*"))
+(setq-default command-history '((sr-speedbar-open) (execute-extended-command nil "sr-speedbar-open" "sr-speedbar-o") (package-install (quote tabbar) nil) (execute-extended-command nil "package-install" "package-ins") (speedbar nil) (execute-extended-command nil "speedbar" "speedbar\\") (execute-extended-command nil "sr-speedbar-open" "sr-s") (sr-speedbar-toggle) (execute-extended-command nil "sr-speedbar-toggle" "sr-s") (sr-speedbar-window-dedicated-only-one-p) (execute-extended-command nil "sr-speedbar-window-dedicated-only-one-p" "sr-s") (execute-extended-command nil "sr-speedbar-toggle" "sr-") (list-packages nil) (execute-extended-command nil "list-packages" "list-pa") (execute-extended-command nil "speedbar" "spee") (ecb-activate) (execute-extended-command nil "ecb-activate" "ecb-ac") (execute-extended-command nil "ecb-activate" "ec") (execute-extended-command nil "package-install" "package-insta") (package-install (quote ecb) nil) (execute-extended-command nil "package-install" "package-install") (package-install (quote window-number) nil) (package-install (quote evil) nil) (execute-extended-command nil "package-install" "package-inst") (load-theme (quote molokai) nil nil) (execute-extended-command nil "load-theme" "load-th") (execute-extended-command nil "load-theme" "load-t") (switch-to-buffer "1005.cc" nil (quote force-same-window)) (switch-to-buffer "*eshell*" nil (quote force-same-window)) (eshell nil) (execute-extended-command nil "eshell" "eshe") (shell nil) (execute-extended-command nil "shell" "she") (find-file "~/workspace/practice/hdoj/1005.cc" t) (package-list-packages nil) (execute-extended-command nil "package-list-packages" "package-l") (find-file "~/.emacs.d/init.el" t)))
+(setq-default evil-repeat-ring (session-make-ring 10 '(([\.\.\.]) ([header-line \.\.\.]))))
+(setq-default extended-command-history '("sr-speedbar-open" "package-install" "speedbar" "sr-speedbar-toggle" "sr-speedbar-window-dedicated-only-one-p" "list-packages" "ecb-activate" "load-theme" "eshell" "shell" "package-list-packages"))
 (setq-default helm-source-complex-command-history '((name . "Complex Command History") (candidates closure (t) nil (let* \.\.\. \.\.\. \.\.\.)) (keymap keymap \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. keymap \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\.) (action ("Eval" closure \.\.\. \.\.\. \.\.\. \.\.\. \.\.\.) ("Edit and eval" closure \.\.\. \.\.\. \.\.\.)) (persistent-action . helm-sexp-eval) (multiline) (filtered-candidate-transformer helm-fuzzy-highlight-matches) (match helm-mm-exact-match helm-mm-match) (redisplay . identity) (header-line . "C-j: helm-sexp-eval (keeping session)") (multimatch) (group . helm)))
 (setq-default helm-source-file-name-history '((name . "File Name History") (candidates . file-name-history) (keymap keymap \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. keymap \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\.) (action . helm-type-file-actions) (persistent-action . ignore) (filtered-candidate-transformer helm-file-name-history-transformer helm-fuzzy-highlight-matches) (match helm-mm-exact-match helm-mm-match) (redisplay . identity) (header-line . "C-j: ignore (keeping session)") (multimatch) (group . helm)))
 (setq-default helm-source-info-automake-history '((name . "Info Index: automake-history") (init . helm-info-init) (candidates . helm-candidates-in-buffer) (keymap keymap \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. keymap \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\. \.\.\.) (action ("Goto node" . helm-info-goto)) (filtered-candidate-transformer helm-fuzzy-highlight-matches) (display-to-real . helm-info-display-to-real) (volatile) (match identity) (redisplay . identity) (header-line . "C-j: Goto node (keeping session)") (multimatch) (group . helm) (get-line . buffer-substring) (search helm-mm-exact-search helm-mm-search helm-candidates-in-buffer-search-default-fn) (info-file . "automake-history")))
+(setq-default minibuffer-history '("tabbar" "ecb" "window-number" "evil" "molokai"))
 (setq-default occur-collect-regexp-history '("\\1"))
+(setq-default serial-name-history '("/dev/ttys0"))
+(setq-default serial-speed-history '("9600" "1200" "2400" "4800" "14400" "19200" "28800" "38400" "57600" "115200"))

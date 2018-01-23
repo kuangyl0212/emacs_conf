@@ -20,3 +20,7 @@ gdb 1002
 g++ -o 1002 1002.cc -g
 gdb 1002
 gdb 1002
+g++ 1005.cc 
+g++ 1005.cc 
+./a.out 
+./a.out 
