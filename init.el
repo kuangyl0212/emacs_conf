@@ -139,7 +139,7 @@
 (setq org-src-fontify-natively t)
 
 ;; 设置默认 Org Agenda 文件目录
-(setq org-agenda-files '("~/org"))
+(setq org-agenda-files '("~/.emacs.d/org"))
 
 ;; 设置 org-agenda 打开快捷键
 (global-set-key (kbd "C-c a") 'org-agenda)
@@ -170,7 +170,7 @@
 
 ;; 笔记
 (load-library "find-lisp")
-(setq org-agenda-files (find-lisp-find-files "~/org/notes" "\.org$"))
+(setq org-agenda-files (find-lisp-find-files "~/.emacs.d/org/notes" "\.org$"))
 
 ;; C的缩进问题
 (setq c-default-style "linux"

@@ -1,5 +1,5 @@
-;;; Automatically generated on Mon Jan 22 22:18:10 2018
-;;; Invoked by ruling@ACA2016A.ipt.aol.com using 25.3.1
+;;; Automatically generated on Mon May  7 13:03:53 2018
+;;; Invoked by forest@debian using 25.1.1
 (setq-default kill-ring '("set-key (kbd \"<f4>\") 'sr-speedba" "sr-speedbar-open" "(global-set-key (kbd \"<f2>\") 'open-init-file)
 " " (defun tabbar-buffer-groups ()
    (list
